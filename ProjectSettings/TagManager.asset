@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
   - name: Background
     uniqueID: 1722448295
     locked: 0
@@ -47,21 +50,18 @@ TagManager:
   - name: BossEnemy
     uniqueID: 2937584309
     locked: 0
-  - name: Player
-    uniqueID: 2645378675
-    locked: 0
-  - name: Environment
-    uniqueID: 2438458267
-    locked: 0
   - name: Props
     uniqueID: 344011587
     locked: 0
   - name: Platform
     uniqueID: 3447225717
     locked: 0
+  - name: Player
+    uniqueID: 2645378675
+    locked: 0
   - name: Chain
     uniqueID: 1971226833
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Environment
+    uniqueID: 2438458267
     locked: 0
