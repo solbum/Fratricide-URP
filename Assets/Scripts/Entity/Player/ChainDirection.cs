@@ -5,12 +5,14 @@ using UnityEngine;
 public class ChainDirection : MonoBehaviour
 {
     LineRenderer lineRenderer;
+    PlayerStatus playerStatus;
     Rigidbody2D rigid;
 
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
         rigid = transform.parent.GetComponent<Rigidbody2D>();
+        playerStatus = transform.parent.GetComponent<PlayerStatus>();
 
         lineRenderer.enabled = false;
     }
@@ -27,7 +29,7 @@ public class ChainDirection : MonoBehaviour
             direction.Normalize();
 
             lineRenderer.SetPosition(0, rigid.position);
-            lineRenderer.SetPosition(1, rigid.position + direction * 5);
+            lineRenderer.SetPosition(1, rigid.position + direction * playerStatus.chainMaxLength);
         }
         else
         {

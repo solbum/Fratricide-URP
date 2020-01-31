@@ -49,7 +49,7 @@ public class PlayerChain : MonoBehaviour
             else if (direction.x < 0)
                 spriteRenderer.flipX = false;
 
-            float length = i * playerStatus.chainMaxLength / playerStatus.chainDuration;
+            float length = i * playerStatus.chainMaxLength / (60 * playerStatus.chainDuration);
 
             // Chain의 Line 생성
             lineRenderer.SetPosition(0, rigid.position);

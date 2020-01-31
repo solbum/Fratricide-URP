@@ -12,7 +12,7 @@ public class PlayerControl : MonoBehaviour
 
     PlayerChain playerChain;
 
-    private void Start()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
